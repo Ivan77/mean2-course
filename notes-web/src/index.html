@@ -5,7 +5,7 @@
     <title>NotesWeb</title>
     <base href="/">
 
-    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
 
     {{#unless environment.production}}
     <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
@@ -27,12 +27,14 @@
         }).catch(console.error.bind(console));
     </script>
 
+
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyA1hiBh7sn5ccTVbJwV8IPaTw8azrHfyNk",
-            authDomain: "mean-course-2.firebaseapp.com",
-            databaseURL: "https://mean-course-2.firebaseio.com"
+            apiKey: "AIzaSyCPhnhJSKA8XZkNsPXhD_nn-APi-C1I46s",
+            authDomain: "notes-web-atilla-439a7.firebaseapp.com",
+            databaseURL: "https://notes-web-atilla-439a7.firebaseio.com",
+            storageBucket: "notes-web-atilla-439a7.appspot.com",
         };
         firebase.initializeApp(config);
     </script>
